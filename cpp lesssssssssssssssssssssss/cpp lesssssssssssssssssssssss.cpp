@@ -38,6 +38,7 @@ using namespace std;// избавляемся от stg::
 //}
 
 // ЛАБ РАБОТА 2
+// _________________задание 1_____________
 //int main() {
 //	cout << "enter 2 nums: ";
 //	int num_1;
@@ -89,16 +90,37 @@ using namespace std;// избавляемся от stg::
 	}
 	 }
 }*/
-int main() {
-	int num = 0;
-	while (true){
-		if (num < 1) {
-			cout << "Enter positive 1 num\n";
-			cin >> num;
-		}
-		else {
-			break;
-		}
-	}
-	cout << num;
-}
+//____________________задание 2____________
+//int main() {
+//	bool flag = true;
+//	int num_1;
+//	while (flag) {
+//		cout << "enter num > 0\n";
+//		cin >> num_1;
+//		if (num_1 > 0) {
+//			flag = false;
+//		}
+//	}
+//	int sum_list = 0;
+//	int list[]{ 1,2,3,4,5,6,7,8,9,10 };
+//	for (int i = 0; i < num_1; i++) {
+//		sum_list += list[i];
+//	}
+//	cout << "vot summa chisel: " << sum_list << endl;
+//	for (int i = 0; i < 10; i++) {
+//		cout << list[i] << " ";
+//	}
+//	cout << endl;
+//	for (int i = 0; i < 10; i ++) {
+//		if (list[i] % 2 == 0) {
+//			cout << list[i] << " ";
+//		}
+//	}
+//	cout << endl;
+//	for (int i = 0; i < 10; i++) {
+//		if (list[i] % 2 == 1) {
+//			cout << list[i] << " ";
+//		}
+//	}
+//}
+
