@@ -124,3 +124,25 @@ using namespace std;// избавляемся от stg::
 //	}
 //}
 
+int main() {
+	int sum_array = 0;
+	int A[2][3] = { {0,1,2},
+					{3,4,5}};
+	for (int i = 0; i < 2; i++) {
+		for (int j = 0; j < 3; j++) {
+			sum_array += A[i][j];
+		}
+	}
+	cout << sum_array << endl;
+	int sec_list[3];
+	sec_list[0] = A[0][0] + A[1][0];
+	sec_list[1] = A[0][1] + A[1][1];
+	sec_list[2] = A[0][2] + A[1][2];
+	for (int i = 0; i < 3; i++) {
+		cout << sec_list[i];
+	}
+	float num = 20.84;
+	float &rnum = num;
+	float &lnum = num;
+
+}
