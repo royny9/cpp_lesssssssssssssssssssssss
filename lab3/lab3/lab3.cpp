@@ -8,6 +8,21 @@ void diff(int a, int d);
 void summ(int a, int d);
 void chfunc(char ch);
 
+typedef int (*FuncPtr)(int, int);
+
+FuncPtr getOperation(char fyn) {
+	if (fyn == '+') {
+		return &sum;
+	}
+	else if (fyn == '-') {
+		return &raznost;
+	}
+	else {
+		return nullptr;
+	}
+}
+
+
 int main() {
 	int* point;
 	int x = 52;
@@ -45,6 +60,19 @@ int main() {
 	diff(a, b);
 	summ(a, b);
 
+	myFunc = getOperation('-');
+	res = myFunc(5, 3);
+	cout << "diff: " << res << endl;
+
+	cout << "summ2: " << sum(5, 3) << endl;
+
+	cout << "diff2: " << raznost(5, 3) << endl;
+
+
+	float* myFloat = new float;
+	*myFloat = 3.14;
+	cout << "myFloat: " << *myFloat << endl;
+	delete myFloat;
 }
 
 void diff(int a, int d) {
