@@ -3,56 +3,56 @@ using namespace std;
 
 
 //___________________________задание 1-7 до переработки_______________________
-//int main() {
-//	setlocale(LC_ALL, "Russian");
-//	int choice;
-//
-//	cout << "Введите число 1, 2 или 3" << endl;
-//	cin >> choice;
-//    try {
-//        switch (choice) {
-//        case 1:
-//            cout << "Один" << endl;
-//            break;
-//        case 2:
-//            cout << "Два" << endl;
-//            break;
-//        case 3:
-//            cout << "Три" << endl;
-//            break;
-//        default:
-//            throw runtime_error("Некорректное значение");
-//        }
-//    }
-//    catch (const runtime_error& e) {
-//        cout << e.what() << endl;
-//        return 1;
-//    }
-//    int birthYear;
-//    cout << "Введите год вашего рождения: ";
-//    cin >> birthYear;
-//    try {
-//        if (birthYear < 0) {
-//            throw runtime_error("Вы ввели отрицательное число");
-//        }
-//        else if (birthYear < 1850) {
-//            throw runtime_error("Что то не верится");
-//        }
-//        else if (birthYear > 2024) {
-//            throw runtime_error("Вы еще не родились");
-//        }
-//        
-//        cout << "Вы ввели год рождения: " << birthYear << endl;
-//
-//    
-//    }
-//    catch (const runtime_error& e) {
-//        cout << e.what() << endl;
-//        return 1;
-//    }
-//    cout << "Спасибо!" << endl;
-//    return 0;
-//}
+int main() {
+	setlocale(LC_ALL, "Russian");
+	int choice;
+
+	cout << "Введите число 1, 2 или 3" << endl;
+	cin >> choice;
+    try {
+        switch (choice) {
+        case 1:
+            cout << "Один" << endl;
+            break;
+        case 2:
+            cout << "Два" << endl;
+            break;
+        case 3:
+            cout << "Три" << endl;
+            break;
+        default:
+            throw runtime_error("Некорректное значение");
+        }
+    }
+    catch (const runtime_error& e) {
+        cout << e.what() << endl;
+        return 1;
+    }
+    int birthYear;
+    cout << "Введите год вашего рождения: ";
+    cin >> birthYear;
+    try {
+        if (birthYear < 0) {
+            throw runtime_error("Вы ввели отрицательное число");
+        }
+        else if (birthYear < 1850) {
+            throw runtime_error("Что то не верится");
+        }
+        else if (birthYear > 2024) {
+            throw runtime_error("Вы еще не родились");
+        }
+        
+        cout << "Вы ввели год рождения: " << birthYear << endl;
+
+    
+    }
+    catch (const runtime_error& e) {
+        cout << e.what() << endl;
+        return 1;
+    }
+    cout << "Спасибо!" << endl;
+    return 0;
+}
 
 
 enum ErrorCode {
